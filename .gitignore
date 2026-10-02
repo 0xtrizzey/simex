@@ -1,0 +1,5 @@
+data/
+dist/
+node_modules/
+*.blob
+.DS_Store

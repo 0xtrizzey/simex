@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>SimEx – Crypto Paper Trading</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23f7a600'/%3E%3Cpath d='M8 21l5-6 4 3 7-9' stroke='%230b0e11' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<header id="topbar">
+  <div class="logo"><svg viewBox="0 0 32 32" width="26" height="26"><rect width="32" height="32" rx="8" fill="#f7a600"/><path d="M8 21l5-6 4 3 7-9" stroke="#0b0e11" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Sim<b>Ex</b></span></div>
+  <nav id="nav">
+    <button data-view="trade" class="active">Trade</button>
+    <button data-view="analytics">Analytics</button>
+    <button data-view="calendar">P&amp;L Calendar</button>
+  </nav>
+  <div class="spacer"></div>
+  <div id="feed-status" class="pill" title="Live data: Hyperliquid WebSocket"><span class="dot"></span><span class="lbl">Connecting…</span></div>
+  <button id="acct-chip" class="acct-chip"></button>
+  <button id="btn-data" class="icon-btn" title="Backup / restore data">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"/></svg>
+  </button>
+</header>
+
+<main>
+  <!-- ===================== TRADE ===================== -->
+  <section id="view-trade" class="view active">
+    <div id="trade-grid">
+      <div id="symbar" class="panel"></div>
+
+      <div id="chart-panel" class="panel">
+        <div id="chart-toolbar"></div>
+        <div id="chart-body">
+          <div id="draw-toolbar"></div>
+          <div id="chart-wrap">
+            <div id="chart"></div>
+            <canvas id="draw-canvas"></canvas>
+            <div id="chart-tags"></div>
+            <div id="chart-legend"></div>
+            <div id="chart-loading" class="show"><span>Loading candles…</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="book-panel" class="panel"></div>
+      <div id="order-panel" class="panel"></div>
+      <div id="bottom-panel" class="panel"></div>
+      <div id="acct-panel" class="panel"></div>
+    </div>
+  </section>
+
+  <!-- ===================== ANALYTICS ===================== -->
+  <section id="view-analytics" class="view"></section>
+
+  <!-- ===================== CALENDAR ===================== -->
+  <section id="view-calendar" class="view"></section>
+</main>
+
+<div id="boot" class="boot"><div class="boot-box"><div class="spin"></div><div id="boot-msg">Loading markets from Hyperliquid…</div></div></div>
+<div id="modal-root"></div>
+<div id="toast-root"></div>
+<div id="ctx-menu"></div>
+
+<script src="lib/lightweight-charts.js"></script>
+<script src="js/util.js"></script>
+<script src="js/feed.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/stats.js"></script>
+<script src="js/chart.js"></script>
+<script src="js/ui-accounts.js"></script>
+<script src="js/ui-trade.js"></script>
+<script src="js/ui-analytics.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

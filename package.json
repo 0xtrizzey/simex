@@ -1,0 +1,12 @@
+{
+  "name": "simex",
+  "version": "1.0.0",
+  "description": "Exchange-style crypto paper-trading simulator with live Hyperliquid data, TradingView charts and quant analytics",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "build:exe": "node build-exe.js"
+  },
+  "engines": { "node": ">=20" }
+}
