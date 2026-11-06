@@ -3,3 +3,14 @@ dist/
 node_modules/
 *.blob
 .DS_Store
+
+# added 2026-11-06 for the private GitHub push
+CLAUDE.local.md
+.claude/settings.local.json
+.claude/worktrees/
+.env
+.env.*
+!.env.example
+secrets/
+.venv/
+__pycache__/
