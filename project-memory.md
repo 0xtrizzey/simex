@@ -19,6 +19,7 @@ not specified yet
 
 ## Project rules
 <!-- Facts and constraints specific to this project (canonical folders, ports, hard directives with ⛔). -->
+- GitHub repo `0xtrizzey/simex` is intentionally PUBLIC (Tristan's decision, 2026-11-06): keep it public, never change its visibility. Because anyone can read it, check every commit for secrets twice.
 
 ## Decisions
 <!-- - [YYYY-MM-DD] <decision> — because <reason> -->
