@@ -30,5 +30,8 @@ not specified yet
 ## Next steps
 - Fill in Overview, How to run and Architecture from the existing code.
 
+## Ideas
+<!-- Ideas that came up mid-task. Not built until Tristan picks one. - [YYYY-MM-DD] <idea> -->
+
 ## Lessons
 <!-- - [YYYY-MM-DD] <context>: <what happened> → RULE: <one sentence> -->
